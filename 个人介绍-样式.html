@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background-color: #eef1f5;
+            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* ---------- 整体：白底 + 黑色表格外框 ---------- */
+        #content-container {
+            width: 70%;
+            max-width: 900px;
+            min-width: 320px;
+            margin: 0 auto;
+            padding: 35px 45px 45px;
+            background-color: #ffffff;
+            border: 2px solid #000;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ---------- 头部区域：相当于表格的首行 ---------- */
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #000;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            padding-bottom: 14px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 10px;
+            text-align: center;
+            color: #1a1a1a;
+            border-bottom: 1px dashed #b5b5b5;
+        }
+
+        .header-text p {
+            margin: 5px 0;
+            padding-left: 10px;
+            font-size: 15px;
+            color: #444;
+            text-indent: 0;
+            border-left: 3px solid #333;
+        }
+
+        /* ---------- 小节标题：相当于表格的分栏标题行 ---------- */
+        h2 {
+            margin: 30px 0 14px;
+            padding: 8px 16px;
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+            background-color: #f0f2f5;
+            border-left: 6px solid #333;
+        }
+
+        /* ---------- 正文段落：两端对齐、首行缩进 ---------- */
+        p {
+            line-height: 2;
+            text-indent: 2em;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        /* ---------- 列表：做成表格中的分行条目 ---------- */
+        ul {
+            margin: 12px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            position: relative;
+            padding: 7px 0 7px 26px;
+            line-height: 1.9;
+            border-bottom: 1px dashed #dcdcdc;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 18px;
+            width: 6px;
+            height: 6px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        /* ---------- 照片：带黑色相框 ---------- */
+        img {
+            display: block;
+            margin: 30px auto;
+            max-width: 25%;
+            height: auto;
+            padding: 2px;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content-container">
+        <div class="header-section">
+            <div class="header-text">
+                <h1>个人介绍</h1>
+                <p>姓名：张三</p>
+                <p>职业：测试工程师。</p>
+                <p>邮箱：zhangsan@outlook.com</p>
+                <p>电话：13800000000</p>
+            </div>
+        </div>
+        <h2>编程与脚本能力</h2>
+        <p>掌握的编程语言括有Java、JavaScript、Python等。编程能力强大，还能借助deepseek等AI工具辅助数据处理和测试开发。</p>
+        <h2>测试工具与自动化框架</h2>
+        <ul>
+            <li>Web端自动化：Selenium、Playwright</li>
+            <li>移动端自动化：Appium</li>
+            <li>测试框架：TestNG、JUnit、Robot Framework、Cucumber</li>
+            <li>前端：HTML、CSS、JavaScript、Vue等</li>
+        </ul>
+        <h2>性能与安全测试</h2>
+        <ul>
+            <li>性能测试：包括前端响应速度测试和后台多用户并发测试，熟练掌握性能测试工具、系统架构、网络和数据库知识。</li>
+            <li>安全测试：具备开发经验或信息安全知识，可进行安全测试。</li>
+        </ul>
+        <h2>数据库与数据处理</h2>
+        <p>熟悉数据库操作，能够熟练编写SQL语句，用于验证测试结果、制作测试数据和批量修改数据。</p>
+        <h2>AI与现代测试技能</h2>
+        <p>熟练使用AI工具辅助Web应用测试、TDD开发、测试修复和系统调试。例如，使用AI Skill结合Playwright或Selenium可自动生成测试脚本、执行测试、生成报告，并处理异步等待和动态渲染问题。
+        </p>
+    </div>
+    <img src="img/8000.jpg" width="512">
+</body>
+
+</html>
